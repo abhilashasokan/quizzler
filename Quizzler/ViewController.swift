@@ -46,6 +46,7 @@ class ViewController: UIViewController {
     func updateUI() {
         progressLabel.text = "\(questionNumber + 1) / 13"
         scoreLabel.text = "Score: \(score)"
+        progressBar.frame.size.width = (view.frame.size.width / 13) * CGFloat(questionNumber + 1)
     }
     
 
